@@ -1,0 +1,91 @@
+.similar-product {
+    margin-bottom: 120px;
+    
+}
+
+
+.similar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.similar__heading {
+    color: #2D3958;
+    font-family: Outfit;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 119.048%;
+    padding: 100px 0px 80px 0px;
+
+}
+
+.similar__other {
+
+}
+
+
+.similar__link {
+    text-decoration: none;
+    
+}
+
+.similar__img {
+    overflow: hidden;
+
+}
+
+.similar__img  img{
+    width: 100%;
+    transition: scale 400ms;
+
+}
+
+.similar__name {
+    color:  #2D3958;
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 155.556%;
+    padding: 16px 0px 8px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.similar__price {
+    color: #7B88A8;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 162.5%;
+    padding: 8px 0px 0px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.similar__link:hover {
+    cursor: pointer;
+}
+
+.similar__link:hover .similar__name {
+    color: $colorSecondary;
+    text-decoration: underline;
+
+}
+
+.similar__img img:hover{
+    scale: 110%;
+    
+}
+
+

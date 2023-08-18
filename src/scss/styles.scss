@@ -1,0 +1,30 @@
+// Abstracts
+@import './abstracts/variables.scss';
+
+// Base
+@import './base/normalize.scss';
+@import './base/reset.scss';
+
+// Layout
+@import './layout/grid.scss';
+
+// Components
+@import './components/pageHeader.scss';
+@import './components/ourShop.scss';
+
+@import './components/content.scss';
+
+@import './components/device.scss';
+@import './components/description.scss';
+@import './components/similar.scss';
+
+@import './components/getHelp.scss';
+@import './components/footer.scss';
+
+
+
+
+
+
+
+
