@@ -58,7 +58,7 @@
 
 }
 
-.device__img-item {
+.device__img--item {
     overflow: hidden;
 
 }
@@ -231,6 +231,16 @@
 
 }
 
+// ẩn mũi tên của input type number
+.device__quantity input[type=number]::-webkit-inner-spin-button,
+.device__quantity input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+
+}
+
 .device__number {
     border: none;
     outline: none;
@@ -244,7 +254,7 @@
 
 }
 
-.device__quantity--up-down {
+.device__quantity--arrow {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,13 +266,16 @@
 
 }
 
-.device__quantity--up-down i {
+.device__quantity--arrow i {
     padding: 4px;
+    transition: all 0.4s;
 
 }
 
-.device__quantity--up-down i:hover {
+.device__quantity--arrow i:hover {
     cursor: pointer;
+    color: #4F77FF;
+
 }
 
 
@@ -271,6 +284,7 @@
     padding: 11px 24px;
     border-radius: 5px;
     background: #4F77FF;
+    transition: all 0.4s;
 
     color: #FFF;
     text-align: center;
@@ -296,15 +310,18 @@
 
 }
 
-.device__like {
+.device__like i{
     font-size: 16px;
     color: #7B88A8;
+    transition: all 0.3s;
+    padding: 4px;
     
 }
 
-.device__like:hover {
+.device__like i:hover {
     cursor: pointer;
     color: #4F77FF;
+    transform: scale(1.2, 1.2);
 
 }
 
@@ -319,14 +336,21 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+}
+
+.device__social i {
     font-size: 16px;
     color: #7B88A8;
+    transition: all 0.3s;
+    padding: 4px;
 
 }
 
 .device__social i:hover {
     cursor: pointer;
     color: #4F77FF;
+    transform: scale(1.2, 1.2);
 
 }
 
@@ -359,6 +383,11 @@
     font-weight: 500;
     line-height: 162.5%;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+
 }
 
 .device__code--color {
@@ -372,5 +401,10 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 162.5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
 
 }
