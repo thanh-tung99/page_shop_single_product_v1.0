@@ -691,6 +691,24 @@ h6 {
   padding-top: 30px;
 }
 
+.device {
+  padding: 20px 0px;
+}
+@media (min-width: 768px) {
+  .device {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .device {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .device__img {
+    padding-right: 50px;
+  }
+}
 .device__img--large {
   display: flex;
   align-items: center;
@@ -750,6 +768,11 @@ h6 {
   cursor: pointer;
 }
 
+@media (min-width: 992px) {
+  .device__description {
+    padding-left: 50px;
+  }
+}
 .device__name {
   color: #2D3958;
   font-family: Outfit;
@@ -985,6 +1008,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 13px 0px 19px 0px;
   border-top: 1px solid #E7E5EA;
@@ -1029,27 +1053,26 @@ h6 {
 }
 
 .description {
-  margin-top: 100px;
+  padding-top: 60px;
 }
-
+@media (min-width: 992px) {
+  .description {
+    padding-top: 100px;
+  }
+}
 .description__list {
   list-style: none;
   padding-left: 0;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 40px;
-  flex-direction: column;
-  border-right: 1px solid #E7E5EA;
   margin: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .description__list {
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding-right: 0px;
-    border-right: none;
   }
 }
 .description__item {
@@ -1096,29 +1119,28 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   gap: 30px;
+  border-top: 1px solid #E7E5EA;
+  border-bottom: 1px solid #E7E5EA;
+  padding: 20px 0px 30px 0px;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .description__sub {
+    flex-wrap: nowrap;
+    padding: 40px 0px 60px 0px;
+  }
+}
+.description__sub-text {
   color: #7B88A8;
   font-family: DM Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 162.5%;
 }
-@media (min-width: 992px) {
-  .description__sub {
-    border-top: 1px solid #E7E5EA;
-    border-bottom: 1px solid #E7E5EA;
-    justify-content: center;
-    flex-direction: row;
-    padding: 40px 0px 60px 0px;
-  }
-}
-.description__sub p {
-  display: block;
-}
 
 .similar-product {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .similar {
@@ -1134,13 +1156,17 @@ h6 {
   font-size: 42px;
   font-weight: 500;
   line-height: 119.048%;
-  padding: 100px 0px 80px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 80px 0px;
 }
-
+@media (min-width: 768px) {
+  .similar__heading {
+    padding: 100px 0px 80px 0px;
+  }
+}
 .similar__link {
   text-decoration: none;
 }
@@ -1202,16 +1228,19 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 106px 30px 106px 30px;
+  padding: 60px 0px;
 }
-
+@media (min-width: 768px) {
+  .get-help__content {
+    padding: 106px 30px;
+  }
+}
 .get-help__heading {
   color: #2D3958;
   font-size: 30px;
   line-height: 116%;
   font-weight: 500;
-  padding-top: 30px;
-  padding-bottom: 70px;
+  padding: 30px 0px;
   text-align: center;
   font-family: Outfit;
 }
@@ -1223,6 +1252,7 @@ h6 {
 @media (min-width: 768px) {
   .get-help__heading {
     font-size: 48px;
+    padding-bottom: 70px;
   }
 }
 @media (min-width: 992px) {
@@ -1259,9 +1289,13 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 76px;
+  margin-top: 30px;
 }
-
+@media (min-width: 768px) {
+  .get-help__btn {
+    margin-top: 76px;
+  }
+}
 .get-help__chat-now {
   height: 48px;
   padding: 13px 24px;

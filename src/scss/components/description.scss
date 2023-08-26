@@ -1,5 +1,26 @@
 .description {
-    margin-top: 100px;
+    padding-top: 60px;
+
+    @media (max-width: 575px) {
+        
+    }
+        
+    @media (min-width: 575px) {
+            
+    }
+        
+    @media (min-width: 768px) {
+        
+    }
+    
+    @media (min-width: 992px) {
+        padding-top: 100px;
+             
+    }
+    
+    @media (min-width: 1200px) {
+            
+    }
 
 }
 
@@ -9,40 +30,30 @@
     list-style: none;
     padding-left: 0;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 40px;
-    flex-direction: column;
-    border-right: 1px solid #E7E5EA;
     margin: 0;
-
-
+    
     @media (max-width: 575px) {
-        
-        
-    }
-        
-    @media (min-width: 575px) {
-      
-            
-    }
-        
-    @media (min-width: 768px) {
-        
         
     }
     
-    @media (min-width: 992px) {
-        flex-direction: row;
+    @media (min-width: 575px) {
+        
+    }
+    
+    @media (min-width: 768px) {
         justify-content: center;
-        align-items: center;
-        padding-right: 0px;
-        border-right: none;
-            
+         
+    }
+        
+    @media (min-width: 992px) {
+             
     }
     
     @media (min-width: 1200px) {
-            
             
     }
     
@@ -93,40 +104,33 @@
 
 }
 
-
 .description__sub {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     gap: 30px;
-
-    color: #7B88A8;
-    font-family: DM Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 162.5%;
-
+    border-top: 1px solid #E7E5EA;
+    border-bottom: 1px solid #E7E5EA;
+    padding: 20px 0px 30px 0px;
+    flex-wrap: wrap;
+    
     @media (max-width: 575px) {
         
         
     }
-        
+    
     @media (min-width: 575px) {
-      
-            
-    }
         
+        
+    }
+    
     @media (min-width: 768px) {
-      
-            
-    }
         
+        
+    }
+    
     @media (min-width: 992px) {
-        border-top: 1px solid #E7E5EA;
-        border-bottom: 1px solid #E7E5EA;
-        justify-content: center;
-        flex-direction: row;
+        flex-wrap: nowrap;
         padding: 40px 0px 60px 0px;
 
     }
@@ -138,6 +142,11 @@
 
 }
 
-.description__sub p {
-    display: block;
+.description__sub-text {
+    color: #7B88A8;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 162.5%;
+
 }

@@ -1,3 +1,21 @@
+.device {
+  padding: 20px 0px;
+}
+@media (min-width: 768px) {
+  .device {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .device {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .device__img {
+    padding-right: 50px;
+  }
+}
 .device__img--large {
   display: flex;
   align-items: center;
@@ -57,6 +75,11 @@
   cursor: pointer;
 }
 
+@media (min-width: 992px) {
+  .device__description {
+    padding-left: 50px;
+  }
+}
 .device__name {
   color: #2D3958;
   font-family: Outfit;
@@ -292,6 +315,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 13px 0px 19px 0px;
   border-top: 1px solid #E7E5EA;
